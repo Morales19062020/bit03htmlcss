@@ -31,14 +31,17 @@
     justify-content: center;
     align-items: center;
     
+    
   }
   header {
     grid-area: header; 
     height: auto;
+    
   }
   nav {
     grid-area: nav;
     height: auto;
+    
   }
   main {
     grid-area: main;
@@ -46,10 +49,9 @@
   }
   aside {
     grid-area: aside;
-    height: auto;
+    height: 680px;
   }
   footer {
     grid-area: footer;
     height: auto;
   }
-  
