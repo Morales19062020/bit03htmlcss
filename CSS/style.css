@@ -1,3 +1,55 @@
-body {
-    background-color:red
+* {
+    box-sizing: border-box;
   }
+  body {
+    width: 1024px;
+    height: 512px;
+    margin: 16px auto;
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'header header header header'
+      'nav nav nav nav'
+      'main main main aside'
+      'footer footer footer footer';
+  }
+  header,
+  nav,
+  main,
+  aside,
+  footer {
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  header {
+    grid-area: header; 
+    height: auto;
+  }
+  nav {
+    grid-area: nav;
+    height: auto;
+  }
+  main {
+    grid-area: main;
+    height: auto;
+  }
+  aside {
+    grid-area: aside;
+    height: auto;
+  }
+  footer {
+    grid-area: footer;
+    height: auto;
+  }
+  
