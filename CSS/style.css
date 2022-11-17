@@ -5,7 +5,7 @@
     width: 1024px;
     height: 512px;
     margin: 16px auto;
-    background-color:white;
+    background-color:blue;
     border: 2px solid black;
     border-radius: 16px;
     display: grid;
@@ -30,6 +30,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2em 3px 30px 5px;  /*  arriba    1em  padding  */
+    /*  derecha  3px  padding  */
+    /*  abajo 30px padding  */
+    /*  izquierda   5px  padding
+/* en dirección de las agujas del reloj */
+
     
     
   }
@@ -49,9 +55,12 @@
   }
   aside {
     grid-area: aside;
-    height: 680px;
+    height: 900px;
   }
   footer {
     grid-area: footer;
     height: auto;
+  }
+  h1 {
+    text-align: center;
   }
